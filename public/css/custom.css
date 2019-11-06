@@ -1,0 +1,7 @@
+.div-align-center {
+    margin: 0 auto;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
