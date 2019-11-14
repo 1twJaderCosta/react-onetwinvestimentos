@@ -4,7 +4,7 @@ const TestimonialsComponent = () => (
   <section id="testimonials" className="section-bg wow fadeInUp">
     <div className="container">
       <header className="section-header">
-        <h3>Testimonials</h3>
+        <h3>Testemunhos</h3>
       </header>
 
       <div className="owl-carousel testimonials-carousel">

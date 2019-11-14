@@ -16,7 +16,7 @@ const AboutComponent = () => (
         </p>
       </header>
 
-      <div className="row about-cols">
+      {/* <div className="row about-cols">
         <div className="col-md-4 wow fadeInUp">
           <div className="about-col">
             <div className="img">
@@ -75,7 +75,7 @@ const AboutComponent = () => (
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   </section>
 );

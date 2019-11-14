@@ -23,7 +23,7 @@ const MenuComponent = () => (
             <a href="#services">Serviços</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio">Planos</a>
           </li>
           <li>
             <a href="#team">Time</a>

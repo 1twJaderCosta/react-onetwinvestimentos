@@ -11,20 +11,21 @@ const PlansComponent = () => (
         <div className="col-lg-12">
           <ul id="portfolio-flters">
             <li data-filter="*" className="filter-active">
-              All
+              Todos
             </li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
+            <li data-filter=".dolar">Dolar</li>
+            <li data-filter=".indice">Índice</li>
+            <li data-filter=".commodities">Commodities</li>
+            <li data-filter=".full">Completo</li>
           </ul>
         </div>
       </div>
 
       <div className="row portfolio-container">
-        <div className="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+        <div className="col-lg-4 col-md-6 portfolio-item dolar filter-app wow fadeInUp">
           <div className="portfolio-wrap">
-            <figure>
-              <img src="img/portfolio/app1.jpg" className="img-fluid" alt="" />
+            <figure style={{ height: "170px" }}>
+              <img src="img/plans/dolar.png" className="img-fluid" alt="" />
               <a
                 href="img/portfolio/app1.jpg"
                 data-lightbox="portfolio"
@@ -39,22 +40,23 @@ const PlansComponent = () => (
               </a>
             </figure>
 
-            <div className="portfolio-info">
+            <div style={{ height: "135px" }} className="portfolio-info">
               <h4>
-                <a href="#">App 1</a>
+                <a href="#">DOLAR OP 1</a>
               </h4>
-              <p>App</p>
+              <p>Dólar + MiniDólar</p>
+              <p>R$ 135,90</p>
             </div>
           </div>
         </div>
 
         <div
-          className="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp"
+          className="col-lg-4 col-md-6 portfolio-item indice filter-web wow fadeInUp"
           data-wow-delay="0.1s"
         >
           <div className="portfolio-wrap">
-            <figure>
-              <img src="img/portfolio/web3.jpg" className="img-fluid" alt="" />
+            <figure style={{ height: "170px" }}>
+              <img src="img/plans/2.jpg" className="img-fluid" alt="" />
               <a
                 href="img/portfolio/web3.jpg"
                 className="link-preview"
@@ -69,22 +71,23 @@ const PlansComponent = () => (
               </a>
             </figure>
 
-            <div className="portfolio-info">
+            <div style={{ height: "135px" }} className="portfolio-info">
               <h4>
-                <a href="#">Web 3</a>
+                <a href="#">Índice OP 1</a>
               </h4>
-              <p>Web</p>
+              <p>Índice Bovespa + Mini-índice</p>
+              <p>R$ 135,90</p>
             </div>
           </div>
         </div>
 
         <div
-          className="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp"
+          className="col-lg-4 col-md-6 portfolio-item indice filter-app wow fadeInUp"
           data-wow-delay="0.2s"
         >
           <div className="portfolio-wrap">
-            <figure>
-              <img src="img/portfolio/app2.jpg" className="img-fluid" alt="" />
+            <figure style={{ height: "170px" }}>
+              <img src="img/plans/3.jpeg" className="img-fluid" alt="" />
               <a
                 href="img/portfolio/app2.jpg"
                 className="link-preview"
@@ -99,19 +102,20 @@ const PlansComponent = () => (
               </a>
             </figure>
 
-            <div className="portfolio-info">
+            <div style={{ height: "135px" }} className="portfolio-info">
               <h4>
-                <a href="#">App 2</a>
+                <a href="#">Índice OP 2</a>
               </h4>
-              <p>App</p>
+              <p>Índice Bovespa + Mini-índice + Índice S&P 500</p>
+              <p>R$ 245,90</p>
             </div>
           </div>
         </div>
 
-        <div className="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+        <div className="col-lg-4 col-md-6 dolar indice portfolio-item filter-card wow fadeInUp">
           <div className="portfolio-wrap">
-            <figure>
-              <img src="img/portfolio/card2.jpg" className="img-fluid" alt="" />
+            <figure style={{ height: "170px" }}>
+              <img src="img/plans/4.jpeg" className="img-fluid" alt="" />
               <a
                 href="img/portfolio/card2.jpg"
                 className="link-preview"
@@ -126,22 +130,23 @@ const PlansComponent = () => (
               </a>
             </figure>
 
-            <div className="portfolio-info">
+            <div style={{ height: "135px" }} className="portfolio-info">
               <h4>
-                <a href="#">Card 2</a>
+                <a href="#">Dolar-Índice OP 1</a>
               </h4>
-              <p>Card</p>
+              <p>Dólar + MiniDólar + Índice Bovespa + Mini-índice</p>
+              <p>R$ 299,90</p>
             </div>
           </div>
         </div>
 
         <div
-          className="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp"
+          className="col-lg-4 col-md-6 portfolio-item dolar indice filter-web wow fadeInUp"
           data-wow-delay="0.1s"
         >
           <div className="portfolio-wrap">
-            <figure>
-              <img src="img/portfolio/web2.jpg" className="img-fluid" alt="" />
+            <figure style={{ height: "170px" }}>
+              <img src="img/plans/5.jpg" className="img-fluid" alt="" />
               <a
                 href="img/portfolio/web2.jpg"
                 className="link-preview"
@@ -156,22 +161,26 @@ const PlansComponent = () => (
               </a>
             </figure>
 
-            <div className="portfolio-info">
+            <div style={{ height: "135px" }} className="portfolio-info">
               <h4>
-                <a href="#">Web 2</a>
+                <a href="#">Dolar-Índice OP 2</a>
               </h4>
-              <p>Web</p>
+              <p>
+                Dólar + MiniDólar + Índice Bovespa + Mini-índice + Índice S&P
+                500
+              </p>
+              <p>R$ 330,90</p>
             </div>
           </div>
         </div>
 
         <div
-          className="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp"
+          className="col-lg-4 col-md-6 portfolio-item commodities wow fadeInUp"
           data-wow-delay="0.2s"
         >
           <div className="portfolio-wrap">
-            <figure>
-              <img src="img/portfolio/app3.jpg" className="img-fluid" alt="" />
+            <figure style={{ height: "170px" }}>
+              <img src="img/plans/6.jpg" className="img-fluid" alt="" />
               <a
                 href="img/portfolio/app3.jpg"
                 className="link-preview"
@@ -186,19 +195,20 @@ const PlansComponent = () => (
               </a>
             </figure>
 
-            <div className="portfolio-info">
+            <div style={{ height: "135px" }} className="portfolio-info">
               <h4>
-                <a href="#">App 3</a>
+                <a href="#">Commodities OP 1</a>
               </h4>
-              <p>App</p>
+              <p>Café Arábica + Boi Gordo</p>
+              <p>R$ 199,90</p>
             </div>
           </div>
         </div>
 
-        <div className="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+        <div className="col-lg-4 col-md-6 portfolio-item commodities dolar indice full wow fadeInUp">
           <div className="portfolio-wrap">
-            <figure>
-              <img src="img/portfolio/card1.jpg" className="img-fluid" alt="" />
+            <figure style={{ height: "170px" }}>
+              <img src="img/plans/6.jpg" className="img-fluid" alt="" />
               <a
                 href="img/portfolio/card1.jpg"
                 className="link-preview"
@@ -213,22 +223,23 @@ const PlansComponent = () => (
               </a>
             </figure>
 
-            <div className="portfolio-info">
+            <div style={{ height: "135px" }} className="portfolio-info">
               <h4>
-                <a href="#">Card 1</a>
+                <a href="#">Master</a>
               </h4>
-              <p>Card</p>
+              <p>Dólar + Índices + commodities + Juros DI - COMPLETO</p>
+              <p>R$ 499,90</p>
             </div>
           </div>
         </div>
 
         <div
-          className="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp"
+          className="col-lg-4 col-md-6 portfolio-item commodities dolar wow fadeInUp"
           data-wow-delay="0.1s"
         >
           <div className="portfolio-wrap">
-            <figure>
-              <img src="img/portfolio/card3.jpg" className="img-fluid" alt="" />
+            <figure style={{ height: "170px" }}>
+              <img src="img/plans/7.jpeg" className="img-fluid" alt="" />
               <a
                 href="img/portfolio/card3.jpg"
                 className="link-preview"
@@ -243,22 +254,23 @@ const PlansComponent = () => (
               </a>
             </figure>
 
-            <div className="portfolio-info">
+            <div style={{ height: "135px" }} className="portfolio-info">
               <h4>
-                <a href="#">Card 3</a>
+                <a href="#">Commodities + Dolar OP 2</a>
               </h4>
-              <p>Card</p>
+              <p>Dólar + MiniDólar + Café Arábica + Boi Gordo</p>
+              <p>R$ 267,90</p>
             </div>
           </div>
         </div>
 
         <div
-          className="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp"
+          className="col-lg-4 col-md-6 portfolio-item commodities indice wow fadeInUp"
           data-wow-delay="0.2s"
         >
           <div className="portfolio-wrap">
-            <figure>
-              <img src="img/portfolio/web1.jpg" className="img-fluid" alt="" />
+            <figure style={{ height: "170px" }}>
+              <img src="img/plans/8.jpg" className="img-fluid" alt="" />
               <a
                 href="img/portfolio/web1.jpg"
                 className="link-preview"
@@ -273,11 +285,15 @@ const PlansComponent = () => (
               </a>
             </figure>
 
-            <div className="portfolio-info">
+            <div style={{ height: "135px" }} className="portfolio-info">
               <h4>
-                <a href="#">Web 1</a>
+                <a href="#">Commodities + Índices OP 3</a>
               </h4>
-              <p>Web</p>
+              <p>
+                Café Arábica + Boi Gordo + Índice Bovespa + Mini-índice + Índice
+                S&P 500
+              </p>
+              <p>R$ 359,90</p>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ const SkillsComponent = () => (
     <div className="container">
       <header className="section-header">
         <h3>Nossas previsões</h3>
-        <p>Valor em porcentagem referente ao índicês e períodos</p>
+        <p>Valor em porcentagem referente aos índices e períodos</p>
       </header>
 
       <p>Novembro/2019</p>
