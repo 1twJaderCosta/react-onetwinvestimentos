@@ -12,6 +12,8 @@ import CardHeader from "components/Card/CardHeader.js";
 import CardAvatar from "components/Card/CardAvatar.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
+import GeneralFooter from "../../components/Footer/GeneralFooter";
+import MenuComponent from "../../components/Menu";
 
 import avatar from "assets/img/faces/marc.jpg";
 
@@ -39,77 +41,84 @@ const useStyles = makeStyles(styles);
 export default function LoginPage() {
   const classes = useStyles();
   return (
-    <div>
-      <GridContainer>
-        <GridItem xs={8} sm={8} md={8}>
-          <Card>
-            <CardHeader color="success">
-              <h4 className={classes.cardTitleWhite}>Login</h4>
-              <p className={classes.cardCategoryWhite}>
-                Entrar no painel de controle 1TWInvestimentos
-              </p>
-            </CardHeader>
-            <CardBody>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={5}>
-                  <CustomInput
-                    labelText="Company (disabled)"
-                    id="company-disabled"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                    inputProps={{
-                      disabled: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={3}>
-                  <CustomInput
-                    labelText="Username"
-                    id="username"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="Email address"
-                    id="email-address"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-              </GridContainer>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={6}>
-                  <CustomInput
-                    labelText="First Name"
-                    id="first-name"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={6}>
-                  <CustomInput
-                    labelText="Last Name"
-                    id="last-name"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-              </GridContainer>
-            </CardBody>
-            <CardFooter>
-              <Button color="success">Entrar</Button>
-            </CardFooter>
-          </Card>
-        </GridItem>
-      </GridContainer>
-      <p>REGISTRAR</p>
-    </div>
+    <>
+      <MenuComponent />
+      <div className="row image-login">
+        <div className="col-md-4" />
+        <div className="col-md-4" style={{ marginTop: "13%" }}>
+          <GridContainer>
+            <GridItem xs={12} sm={12} md={12}>
+              <Card>
+                <CardHeader color="success">
+                  <h4 className={classes.cardTitleWhite}>Login</h4>
+                  <p className={classes.cardCategoryWhite}>
+                    Entrar no painel de controle 1TWInvestimentos
+                  </p>
+                </CardHeader>
+                <CardBody>
+                  <GridContainer>
+                    <GridItem xs={12} sm={12} md={5}>
+                      <CustomInput
+                        labelText="Company (disabled)"
+                        id="company-disabled"
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                        inputProps={{
+                          disabled: true
+                        }}
+                      />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={3}>
+                      <CustomInput
+                        labelText="Username"
+                        id="username"
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                      />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={4}>
+                      <CustomInput
+                        labelText="Email address"
+                        id="email-address"
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                      />
+                    </GridItem>
+                  </GridContainer>
+                  <GridContainer>
+                    <GridItem xs={12} sm={12} md={6}>
+                      <CustomInput
+                        labelText="First Name"
+                        id="first-name"
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                      />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={6}>
+                      <CustomInput
+                        labelText="Last Name"
+                        id="last-name"
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                      />
+                    </GridItem>
+                  </GridContainer>
+                </CardBody>
+                <CardFooter>
+                  <Button color="success">Entrar</Button>
+                </CardFooter>
+              </Card>
+            </GridItem>
+          </GridContainer>
+          <p>REGISTRAR</p>
+        </div>
+      </div>
+      <GeneralFooter />
+    </>
   );
 }

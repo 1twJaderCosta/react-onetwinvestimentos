@@ -5,3 +5,12 @@
     justify-content: center;
     text-align:center;
 }
+
+.image-login {
+    background-image: url("../img/plans/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 680px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
